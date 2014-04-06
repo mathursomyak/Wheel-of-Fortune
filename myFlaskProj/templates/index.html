@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>myFlaskProject</title>
+</head>
+<body>
+    <h1>Enter puzzle to solve:</h1>
+    <form action="/" method="post">
+        <input type="text" name="expression" />
+        <input type="submit" value="Submit" />
+    </form>
+    {% with messages = get_flashed_messages() %}
+        {%  if messages  %}
+            <h1>Here are some good guesses:</h1>
+            <pre style="border-bottom: darkcyan ; border: dashed; font-size: 18pt; font: Blackboard">
+                {% for message in messages %}
+
+                {{ message[0][0] }}{{ " - " }}{{  message[0][1] }}
+                {{ message[1][0] }}{{ " - " }}{{  message[1][1] }}
+                {{ message[2][0] }}{{ " - " }}{{  message[2][1] }}
+                {{ message[3][0] }}{{ " - " }}{{  message[3][1] }}
+                {{ message[4][0] }}{{ " - " }}{{  message[4][1] }}
+                {% endfor %}
+            </pre>
+        {% endif %}
+    {% endwith %}
+</body>
+</html>

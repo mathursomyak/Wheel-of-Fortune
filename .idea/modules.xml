@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Wheel-of-Fortune.iml" filepath="$PROJECT_DIR$/.idea/Wheel-of-Fortune.iml" />
+      <module fileurl="file://$USER_HOME$/PycharmProjects/myFlaskProj/.idea/myFlaskProj.iml" filepath="$USER_HOME$/PycharmProjects/myFlaskProj/.idea/myFlaskProj.iml" />
     </modules>
   </component>
 </project>
